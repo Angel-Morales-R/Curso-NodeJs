@@ -1,0 +1,27 @@
+{
+  "name": "templates-engines",
+  "version": "0.0.1",
+  "description": "Como usar los mototes de plantillas en Jade y EJS para las vistas de express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor server.js"
+  },
+  "keywords": [
+    "express",
+    "jade",
+    "ejs",
+    "templates",
+    "engines",
+    "nodejs"
+  ],
+  "author": "Kisame",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "serve-favicon": "^2.5.0"
+  }
+}

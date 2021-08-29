@@ -1,0 +1,30 @@
+extends  layout.pug
+block content
+  article#pug.container
+    h1 
+          a(href="#{link}", target="_blank")= title 
+    p= descripcion
+
+  article.container 
+    h2 Conoce los mejores personajes de 4 estrellas 
+    p Encontraras muchos personajes como:
+    p 
+        |Xinqyu
+        |Diona
+        |Fish
+
+    include logo
+      //Interpolacion
+      p.
+            Tambien conoceras muchos personajes de 5 estrellas #[a(href="https://genshin.gg/tier-list", target="_blank") TierList]
+
+      br
+      button#Descubrir.boton Descubrir
+      script. 
+        //alert('Javascript ejecutado desde pug')
+        document.querySelector("#Descubrir").onclick = () => {
+          alert('Has presionado el boton javascript desde PUG')
+        }
+
+      -const nombre = 'Diluc'
+      p Hola #{nombre}
